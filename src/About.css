@@ -1,0 +1,54 @@
+.about {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  .about-details {
+    margin-top: 10px;
+  }
+  
+  .about-summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  
+  .about-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about {
+      padding: 30px;
+    }
+  
+    .about-heading {
+      font-size: 28px;
+    }
+  
+    .about-description {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .about {
+      padding: 20px;
+    }
+  
+    .about-heading {
+      font-size: 24px;
+    }
+  
+    .about-description {
+      font-size: 14px;
+    }
+  }
+  
