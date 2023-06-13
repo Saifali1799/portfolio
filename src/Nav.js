@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Nav.css";
 
@@ -12,9 +13,9 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar-container">
-        <a href="/" className="navbar-logo">
+        <Link to="home" className="navbar-logo">
           Saif
-        </a>
+        </Link>
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
@@ -23,24 +24,24 @@ const Navbar = () => {
           style={{ right: `${isOpen ? "0" : "-100%"}` }}
         >
           <li className="nav-item">
-            <a href="/" className="nav-link">
+            <Link to="home" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="/about" className="nav-link">
+            <Link to="about" className="nav-link">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="/services" className="nav-link">
-              Services
-            </a>
+            <Link to="skill" className="nav-link">
+              Skills
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="/contact" className="nav-link">
+            <Link to="contact" className="nav-link">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
