@@ -7,7 +7,7 @@ const ContactSection = () => {
   const whatsappNumber = "+96894629998";
 
   return (
-    <div className="contact-section">
+    <div name="contact" className="contact-section">
       <h2>Contact</h2>
       <div className="contact-details">
         <div className="contact-name">{name}</div>
