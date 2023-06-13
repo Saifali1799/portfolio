@@ -1,38 +1,43 @@
 import React from 'react';
 import './Skills.css';
 
-const SkillsSection = () => {
+const Skills = () => {
   return (
-    <div className="skills-section">
-      <h2>Skills</h2>
-      <ul className="skills-list">
-        <li className="skill-item">
-          <div className="skill-name">HTML</div>
-          <div className="skill-bar">
-            <div className="skill-progress html"></div>
+    <div className='skills-container'>
+      <h2 className='skills-heading'>Skills</h2>
+      <div className='skills-list'>
+        <div className='skill'>
+          <i className='fab fa-html5'></i>
+          <span>HTML</span>
+          <div className='skill-bar'>
+            <div className='skill-level html'></div>
           </div>
-        </li>
-        <li className="skill-item">
-          <div className="skill-name">CSS</div>
-          <div className="skill-bar">
-            <div className="skill-progress css"></div>
+        </div>
+        <div className='skill'>
+          <i className='fab fa-css3'></i>
+          <span>CSS</span>
+          <div className='skill-bar'>
+            <div className='skill-level css'></div>
           </div>
-        </li>
-        <li className="skill-item">
-          <div className="skill-name">JavaScript</div>
-          <div className="skill-bar">
-            <div className="skill-progress javascript"></div>
+        </div>
+        <div className='skill'>
+          <i className='fab fa-js'></i>
+          <span>JavaScript</span>
+          <div className='skill-bar'>
+            <div className='skill-level js'></div>
           </div>
-        </li>
-        <li className="skill-item">
-          <div className="skill-name">React</div>
-          <div className="skill-bar">
-            <div className="skill-progress react"></div>
+        </div>
+        <div className='skill'>
+          <i className='fab fa-react'></i>
+          <span>React</span>
+          <div className='skill-bar'>
+            <div className='skill-level react'></div>
           </div>
-        </li>
-      </ul>
+        </div>
+        {/* Add more skills */}
+      </div>
     </div>
   );
 };
 
-export default SkillsSection;
+export default Skills;

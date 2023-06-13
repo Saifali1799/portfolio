@@ -1,98 +1,85 @@
-.navbar {
-  background-color: #222;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
+
 
 .navbar-container {
+  background-color: #000;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #f1c40f;
+  font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  margin-right: auto;
-  margin-left: 0;
+  margin-left: 30px;
 }
-
 
 .menu-icon {
   display: none;
-  color: white;
+  color: #f1c40f;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  list-style: none;
-  text-align: center;
+  margin-right: 30px;
+  
 }
 
 .nav-item {
-  height: 80px;
+  margin-left: 20px;
+  
+  
 }
 
 .nav-link {
-  color: #fff;
+  color: #f1c40f;
+  font-size: 16px;
   text-decoration: none;
-  padding: 0 20px;
-  height: 100%;
-  display: flex;
-  align-items: center;
+  transition: color 0.3s ease;
+  margin-left: 20px;
 }
 
-@media screen and (max-width: 960px) {
-  .navbar {
-    position: relative;
-    height: fit-content;
-    padding: 2rem ;
-  }
+.nav-link:hover {
+  color: #ff0000;
+}
 
+@media screen and (max-width: 768px) {
   .menu-icon {
-    color: gray;
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
     z-index: 999;
+  
   }
 
   .nav-menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 100vh;
-    position: absolute;
-    top: 2rem;
-    opacity: 1;
-    transition: all 1s ease;
-    background-color: #222;
-    padding: 2rem auto;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+    
+    
+  }
+
+  .nav-menu.active {
+    background: #000;
+    right: 0;
+    
   }
 
   .nav-item {
-    width: 100%;
-  }
-  .nav-link {
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    display: table;
+    margin-bottom: 16px;
+    
   }
 }

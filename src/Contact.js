@@ -2,9 +2,9 @@ import React from 'react';
 import './Contact.css';
 
 const ContactSection = () => {
-  const name = "Your Name";
-  const linkedinURL = "https://www.linkedin.com/in/your-profile";
-  const whatsappNumber = "+1234567890";
+  const name = "Saif Ali";
+  const linkedinURL = "https://www.linkedin.com/in/saif-ali-tughalaq/";
+  const whatsappNumber = "+96894629998";
 
   return (
     <div className="contact-section">

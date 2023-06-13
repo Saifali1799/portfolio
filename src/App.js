@@ -14,7 +14,7 @@ const App = () => {
       <Skills/>
       <Contact/>
     </div>
-  )
+  )                                                                                                                                                                                                                                     
 }
 
 export default App

@@ -1,125 +1,91 @@
-.skills-section {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .skills-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .skill-item {
-    margin: 10px;
-    width: 200px;
-  }
-  
-  .skill-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .skill-bar {
-    width: 100%;
-    background-color: #e5e5e5;
-    height: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .skill-progress {
-    height: 100%;
-    background-color: #4caf50;
-    animation: progress 2s ease-in-out;
-  }
-  
-  @keyframes progress {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-  
-  .html {
-    width: 90%;
-  }
-  
-  .css {
-    width: 80%;
-  }
-  
-  .javascript {
-    width: 75%;
-  }
-  
-  .react {
-    width: 70%;
-  }
-.skills-section {
+.skills-container {
+  /* background-color: #000; */
+  color: #f1c40f;
+  padding: 40px;
   text-align: center;
-  margin-bottom: 40px;
+}
+
+.skills-heading {
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 .skills-list {
-  list-style: none;
-  padding: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.skill-item {
-  margin: 10px;
-  width: 200px;
+.skill i {
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
-.skill-name {
-  font-weight: bold;
-  margin-bottom: 5px;
+.skill span {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .skill-bar {
-  width: 100%;
-  background-color: #e5e5e5;
-  height: 20px;
-  border-radius: 10px;
-  overflow: hidden;
+  width: 200px;
+  height: 10px;
+  background-color: #333;
+  position: relative;
 }
 
-.skill-progress {
+.skill-level {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  background-color: #4caf50;
-  animation: progress 2s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 
-@keyframes progress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.html {
+/* Skill level colors */
+.skill-level.html {
   width: 100%;
+  background-color: #f1c40f;
 }
 
-.css {
+.skill-level.css {
   width: 80%;
+  background-color: #f1c40f;
 }
 
-.javascript {
-  width: 75%;
+.skill-level.js {
+  width: 60%;
+  background-color: #f1c40f;
 }
 
-.react {
+.skill-level.react {
   width: 50%;
+  background-color: #f1c40f;
 }
-  
+
+@media screen and (max-width: 768px) {
+  .skills-container {
+    padding: 20px;
+  }
+
+  .skills-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .skills-list {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .skill {
+    width: 100%;
+    text-align: center;
+  }
+}
